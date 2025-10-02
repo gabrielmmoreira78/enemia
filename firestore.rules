@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Usuários podem ler/escrever apenas seus próprios dados
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Redações: usuário pode ler/escrever apenas suas próprias
+    match /redacoes/{redacaoId} {
+      allow read, write: if request.auth != null && 
+        request.auth.uid == resource.data.user_id;
+      allow create: if request.auth != null && 
+        request.auth.uid == request.resource.data.user_id;
+    }
+  }
+}
+
+
+
+
+
