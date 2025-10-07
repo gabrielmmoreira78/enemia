@@ -41,7 +41,7 @@ correcao-enem-ia/
 - **`redacao/[id].js`** - Visualização de redação específica
 
 #### APIs (Backend)
-- **`api/corrigir.js`** - Endpoint para correção de redações com IA
+- **`api/corrigir.js`** - Endpoint para correção de redações por algoritmo
 - **`api/gerar-tema.js`** - Endpoint para gerar temas aleatórios
 
 ### `/scripts/` - Scripts de Configuração
@@ -150,7 +150,7 @@ correcao-enem-ia/
 2. **Usuário gera tema** → API `/api/gerar-tema`
 3. **Usuário escreve redação** → `EditorRedacao` component
 4. **Usuário envia para correção** → API `/api/corrigir`
-5. **IA corrige redação** → OpenAI GPT-3.5-turbo
+5. **Algoritmo corrige redação** → regras internas
 6. **Resultado salvo** → Firestore database
 7. **Usuário vê resultado** → `CardCompetencia` components
 8. **Histórico atualizado** → `PainelHistorico` component

@@ -21,7 +21,6 @@ Este guia te ajudará a fazer o deploy da aplicação em diferentes plataformas.
    - `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
    - `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID`
    - `NEXT_PUBLIC_FIREBASE_APP_ID`
-   - `OPENAI_API_KEY`
    - `FIREBASE_ADMIN_PROJECT_ID`
    - `FIREBASE_ADMIN_PRIVATE_KEY`
    - `FIREBASE_ADMIN_CLIENT_EMAIL`
@@ -240,11 +239,7 @@ server {
 firebase deploy --only firestore:rules
 ```
 
-### 2. OpenAI
-
-1. **Verificar limites da API**
-2. **Configurar webhook** (se necessário)
-3. **Monitorar uso** no dashboard
+ 
 
 ### 3. Monitoramento
 
@@ -292,8 +287,6 @@ firebase deploy --only firestore:rules
 ### Problemas Comuns
 
 1. **Erro 500 na correção**:
-   - Verificar API key do OpenAI
-   - Verificar limites de uso
    - Verificar logs do servidor
 
 2. **Erro de autenticação**:

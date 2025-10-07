@@ -39,8 +39,7 @@ async function setup() {
     const firebaseMessagingSenderId = await question('NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: ');
     const firebaseAppId = await question('NEXT_PUBLIC_FIREBASE_APP_ID: ');
 
-    console.log('\n🤖 Configuração da OpenAI:');
-    const openaiApiKey = await question('OPENAI_API_KEY: ');
+    // OpenAI configuration removed (no longer required)
 
     console.log('\n🔐 Configuração do Firebase Admin:');
     const firebaseAdminProjectId = await question('FIREBASE_ADMIN_PROJECT_ID: ');
@@ -55,10 +54,6 @@ NEXT_PUBLIC_FIREBASE_PROJECT_ID=${firebaseProjectId}
 NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=${firebaseStorageBucket}
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=${firebaseMessagingSenderId}
 NEXT_PUBLIC_FIREBASE_APP_ID=${firebaseAppId}
-
-# OpenAI API Key
-OPENAI_API_KEY=${openaiApiKey}
-
 # Firebase Admin SDK
 FIREBASE_ADMIN_PROJECT_ID=${firebaseAdminProjectId}
 FIREBASE_ADMIN_PRIVATE_KEY="${firebaseAdminPrivateKey}"

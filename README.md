@@ -221,8 +221,8 @@ As cores principais estão definidas em `tailwind.config.js`:
 ### Temas de Redação
 Os temas estão definidos em `pages/api/gerar-tema.js`. Você pode adicionar novos temas facilmente.
 
-### Prompt da IA
-O prompt para correção está em `pages/api/corrigir.js`. Você pode personalizar para melhorar a qualidade das correções.
+### Algoritmo de correção
+As regras usadas para correção estão em `pages/api/corrigir.js`. Você pode personalizar para melhorar a qualidade das correções.
 
 ## 🔒 Segurança
 
@@ -240,8 +240,8 @@ Se houver problemas de CORS, verifique se as URLs do Firebase estão corretas.
 ### Erro de Autenticação
 Verifique se as chaves do Firebase estão corretas e se a autenticação está habilitada.
 
-### Erro na API do OpenAI
-Verifique se a API key está correta e se você tem créditos disponíveis.
+### Erro na correção
+Verifique os logs do servidor e a entrada enviada.
 
 ### Erro no Firestore
 Verifique as regras de segurança e se o banco está configurado corretamente.
